@@ -65,7 +65,7 @@ Wyniki powinny zawierać, następujące kolumny:
 - `name` - nazwę złapanego pokemona.
 
 ## Zadanie 4
-Załóż, że sesje łapania pokemonów trwają 10 sekund — liczy się czas rejestracji przypadku złapania pokemona. 
+Załóż, że sesje łapania pokemonów odbywają się co 10 sekund — liczy się czas rejestracji przypadku złapania pokemona. 
 Dla każdej sesji wyznaczany jest dominujący typ pokemona, który w jej trakcie łapany był największą liczbę razy (w przypadku remisu, gdy dwa, lub więcej typów zostało złapanych w sesji taką samą liczbę razy, o dominacji decyduje średnia siła złapanych pokemonów danego typu — większa wygrywa). 
 5 kolejnych sesji tworzy rozgrywkę. Dla każdej rozgrywki wyznaczany jest `DType` (typ pokemona), który był dominujący w co najmniej trzech sesjach zaliczanych do rozgrywki. 
 
