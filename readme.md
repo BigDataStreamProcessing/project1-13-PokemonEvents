@@ -76,25 +76,17 @@ Wyniki powinny zawierać, następujące kolumny:
 - `name` - nazwę złapanego pokemona.
 
 ## Zadanie 4
-Załóż, że sesje łapania pokemonów odbywają się co 10 sekund — 
-liczy się czas rejestracji przypadku złapania pokemona. 
-Dla każdej sesji wyznaczane są dominujące typy pokemonów, które w 
-jej trakcie łapane były największą liczbę razy. 
-5 kolejnych sesji tworzy rozgrywkę. Dla każdej rozgrywki wyznaczane 
-są `DType` (typy pokemonów), które były dominujące w co najmniej trzech 
-sesjach zaliczanych do rozgrywki. 
+Dla każdego typu pokemona wyznaczaj ranking
+pięciu najsilniejszych osobników (według `cp`)
+złapanych w ciągu ostatniej minuty rejestracji.
+Porównuj średnią siłę top-5 pokemonów typu `fire`
+ze średnią siłą top-5 pokemonów typu `water`.
+Pomiń wynik, jeśli któregoś z typów brakuje w oknie.
 
-Wyznaczaj typ `DType` dla rozgrywek. 
-
-Wyniki powinny zawierać, następujące kolumny:
-- `DType` - typ `Dtype` dla rozgrywki.
-- `start_its` - czas rejestracji złapania pierwszego pokemona 
-   w pierwszej sesji pierwszej rozgrywki
-- `end_its` - czas rejestracji złapania ostatniego pokemona w 
-  ostatniej sesji ostatniej rozgrywki
-
-W przypadku gdy wiele typów pokemonów będzie wyznaczone dla jednej rozgrywki,
-każdy z nich raportowany jest w osobnym wierszu wynikowym.
+Wyniki powinny zawierać następujące kolumny:
+* `avg_fire` - średnia `cp` top-5 pokemonów fire
+* `avg_water` - średnia `cp` top-5 pokemonów water
+* `diff` - różnica (fire minus water)
 
 ## Zadanie 5
 Pokemony, których złapanie zostało zarejestrowane w ciągu 5 sekund, 
