@@ -104,8 +104,8 @@ Wyniki powinny zawierać, następujące kolumny:
 - `cp_water` - siła złapanego pokemona typu wodnego,
 - `winner` - zwycięzca interakcji 
 
-W przypadku znalezienia wielu par kontrujących pokemonów należy 
-zwrócić je wszystkie.
+W przypadku znalezienia wielu możliwych par kontrujących 
+pokemonów należy zwrócić je wszystkie.
 
 W przypadku równej siły obu pokemonów jako zwycięzcę podaj `draw`.
 
